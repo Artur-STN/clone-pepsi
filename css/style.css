@@ -29,6 +29,8 @@ body {
     align-items: center;
     justify-content: center;
 
+    overflow-y: auto;
+
 }
 
 #body {
@@ -54,7 +56,7 @@ header {
 
 }
 
-header ul {
+header nav ul {
 
     display: flex;
     align-items: center;
@@ -66,7 +68,7 @@ header ul {
 
 }
 
-header ul a li {
+header nav ul a li {
 
     color: white;
 
@@ -104,6 +106,8 @@ main .primeiroConteudo {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin: 1rem 0;
 
 }
 
@@ -173,6 +177,12 @@ main .primeiroConteudo .divisoriaTexto .inputButton:hover {
     color: white;
 
     box-shadow: 0 0 10px white;
+
+}
+
+main .primeiroConteudo .divisoriaImgGrande img {
+
+    height: 450px;
 
 }
 
@@ -278,5 +288,107 @@ footer .fa-instagram:hover {
 footer .fa-github:hover {
 
     background: black;
+
+}
+
+#inputCheckbox {
+
+    display: none;
+
+}
+
+label .fas {
+
+    color: white;
+
+    font-size: 2rem;
+
+    display: none;
+
+}
+
+@media(max-width: 1150px) {
+
+    label .fas {
+
+        display: block;
+
+        cursor: pointer;
+
+    }
+
+    #inputCheckbox:checked ~ nav {
+
+        left: 0;
+
+        transition: left 0.2s;
+
+    }
+
+    #inputCheckbox:checked ~ label {
+
+        z-index: 6;
+
+        transition: 0.2s;
+
+    }
+
+    header nav {
+
+        position: fixed;
+        top: 0;
+        left: -100vw;
+
+        z-index: 5;
+
+    }
+
+    header nav ul {
+
+        flex-direction: column;
+
+        background: rgba(0, 0, 0, 0.733);
+
+        width: 100vw;
+        height: 100vh;
+
+        padding: 11rem 0 0 0;
+
+    }
+
+    header nav ul a li {
+
+        font-size: 2rem;
+        
+        width: 100vw;
+
+        padding: 2rem 0;
+
+        border: none;
+
+    }
+
+    header nav ul a li:hover {
+
+        border: none;
+
+        background: white;
+        color: var(--azul);
+
+    }
+
+    main .primeiroConteudo .divisoriaTexto .divisoriaH1 {
+
+        width: 550px;
+    
+    }
+
+    main .primeiroConteudo .divisoriaTexto p {
+
+        color: white;
+    
+        width: 400px;
+    
+    }    
 
 }
