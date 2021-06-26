@@ -93,17 +93,28 @@ main {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    flex-direction: column;
 
 }
 
-main .divisoriaTexto .divisoriaH1 {
+main .primeiroConteudo {
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .primeiroConteudo .divisoriaTexto .divisoriaH1 {
+
+    width: 700px;
     height: 200px;
 
 }
 
-main .divisoriaTexto .divisoriaH1 h1 {
+main .primeiroConteudo .divisoriaTexto .divisoriaH1 h1 {
 
     color: white;
 
@@ -111,7 +122,7 @@ main .divisoriaTexto .divisoriaH1 h1 {
 
 }
 
-main .divisoriaTexto .divisoriaH1 h1:first-child {
+main .primeiroConteudo .divisoriaTexto .divisoriaH1 h1:first-child {
 
     font-size: 4rem;
 
@@ -119,7 +130,7 @@ main .divisoriaTexto .divisoriaH1 h1:first-child {
 
 }
 
-main .divisoriaTexto .divisoriaH1 h1:last-child {
+main .primeiroConteudo .divisoriaTexto .divisoriaH1 h1:last-child {
 
     font-size: 7rem;
 
@@ -127,7 +138,7 @@ main .divisoriaTexto .divisoriaH1 h1:last-child {
 
 }
 
-main .divisoriaTexto p {
+main .primeiroConteudo .divisoriaTexto p {
 
     color: white;
 
@@ -137,7 +148,7 @@ main .divisoriaTexto p {
 
 }
 
-main .divisoriaTexto .inputButton {
+main .primeiroConteudo .divisoriaTexto .inputButton {
 
     font-size: 1.3rem;
     font-weight: 500;
@@ -150,20 +161,58 @@ main .divisoriaTexto .inputButton {
 
     padding: 0 1rem;
 
-    transition: background 0.2s;
+    transition: background 0.5s;
 
     cursor: pointer;
 
 }
 
-main .divisoriaTexto .inputButton:hover {
+main .primeiroConteudo .divisoriaTexto .inputButton:hover {
 
     background: var(--vermelho);
     color: white;
 
+    box-shadow: 0 0 10px white;
+
+}
+
+main .segundoConteudo .divisoriaImgPequeno {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .segundoConteudo .divisoriaImgPequeno img {
+
+    height: 90px;
+
+    margin-right: 3rem;
+
+    cursor: pointer;
+
+    transition: transform 0.5s;
+
+}
+
+main .segundoConteudo .divisoriaImgPequeno img:last-child {
+
+    margin: 0;
+
+}
+
+main .segundoConteudo .divisoriaImgPequeno img:hover {
+
+    transform: translateY(-15px);
+
 }
 
 footer {
+
+    position: fixed;
+    top: 250px;
+    right: 50px;
 
     display: flex;
     align-items: center;
@@ -231,37 +280,3 @@ footer .fa-github:hover {
     background: black;
 
 }
-
-.divisoriaImgPequeno {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.divisoriaImgPequeno img {
-
-    height: 90px;
-
-    margin-right: 3rem;
-
-    cursor: pointer;
-
-    transition: transform 0.5s;
-
-}
-
-.divisoriaImgPequeno img:last-child {
-
-    margin: 0;
-
-}
-
-.divisoriaImgPequeno img:hover {
-
-    transform: translateY(-15px);
-
-}
-
-
