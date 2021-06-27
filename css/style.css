@@ -297,27 +297,43 @@ footer .fa-github:hover {
 
 }
 
-label .fas {
+label {
+
+    display: none;
+    align-items: center;
+    justify-content: center;
 
     color: white;
 
     font-size: 2rem;
 
-    display: none;
+    border-radius: 5px;
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+
+}
+
+label:hover {
+
+    background: white;
+    color: var(--azul);
 
 }
 
 @media(max-width: 1150px) {
 
-    label .fas {
+    label {
 
-        display: block;
-
-        cursor: pointer;
+        display: flex;
 
     }
 
-    #inputCheckbox:checked ~ nav {
+    #inputCheckbox:checked~nav {
 
         left: 0;
 
@@ -325,9 +341,9 @@ label .fas {
 
     }
 
-    #inputCheckbox:checked ~ label {
+    #inputCheckbox:checked~label {
 
-        z-index: 6;
+        z-index: 2;
 
         transition: 0.2s;
 
@@ -339,7 +355,7 @@ label .fas {
         top: 0;
         left: -100vw;
 
-        z-index: 5;
+        z-index: 1;
 
     }
 
@@ -347,7 +363,7 @@ label .fas {
 
         flex-direction: column;
 
-        background: rgba(0, 0, 0, 0.733);
+        background: rgba(0, 0, 0, 0.9);
 
         width: 100vw;
         height: 100vh;
@@ -359,7 +375,7 @@ label .fas {
     header nav ul a li {
 
         font-size: 2rem;
-        
+
         width: 100vw;
 
         padding: 2rem 0;
@@ -380,15 +396,132 @@ label .fas {
     main .primeiroConteudo .divisoriaTexto .divisoriaH1 {
 
         width: 550px;
-    
+
     }
 
     main .primeiroConteudo .divisoriaTexto p {
 
         color: white;
-    
+
         width: 400px;
+
+    }
+
+}
+
+@media(max-width: 1020px) {
+
+    main .primeiroConteudo .divisoriaTexto .divisoriaH1 {
+
+        width: 500px;
+
+    }
+
+}
+
+@media(max-width: 1010px) {
+
+    #body {
+
+        overflow-y: auto;
+
+    }
+
+    main .primeiroConteudo .divisoriaTexto .divisoriaH1 {
+
+        width: 400px;
+        height: 110px;
+
+    }
+
+    main .primeiroConteudo .divisoriaTexto .divisoriaH1 h1:first-child {
+
+        font-size: 2rem;
     
-    }    
+    }
+    
+    main .primeiroConteudo .divisoriaTexto .divisoriaH1 h1:last-child {
+    
+        font-size: 3rem;
+        height: 90px;
+    
+    }
+
+}
+
+@media(max-width: 880px) {
+
+    main .primeiroConteudo {
+
+        flex-direction: column;
+
+    }
+
+    main .primeiroConteudo .divisoriaTexto {
+
+        margin-bottom: 2rem;
+
+    }
+
+    main .primeiroConteudo .divisoriaImgGrande {
+
+        margin-bottom: 2rem;
+
+    }
+
+}
+
+@media(max-width: 520px) {
+
+    main .primeiroConteudo .divisoriaTexto {
+
+        text-align: center;
+
+    }
+
+    footer {
+
+        right: 15px;
+        
+        background: rgba(0, 0, 0, 0.568);
+
+        height: 200px;
+        
+        padding: 0.5rem;
+    
+    }
+    
+    footer .fab {
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        color: white;
+    
+        font-size: 1.5rem;
+    
+        text-shadow: 0 0 6px black;
+        box-shadow: 0 0 3px black;
+    
+        border-radius: 100px;
+    
+        width: 40px;
+        height: 40px;
+    
+        transition: all 0.1s;
+    
+    }
+    
+    footer .fab:hover {
+    
+        font-size: 2rem;
+    
+        text-shadow: 0 0 10px black;
+        box-shadow: 0 0 10px black;
+    
+        border-radius: 15px;
+    
+    }
 
 }
