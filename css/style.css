@@ -473,6 +473,18 @@ label:hover {
 
 @media(max-width: 520px) {
 
+    header nav ul {
+
+        padding: 10rem 0 0 0;
+
+    }
+
+    header nav ul a li {
+
+        padding: 1.5rem;
+
+    }
+
     main .primeiroConteudo .divisoriaTexto {
 
         text-align: center;
